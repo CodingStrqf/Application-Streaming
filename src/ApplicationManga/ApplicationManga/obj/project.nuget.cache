@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "wTX6tX4jEE7hNq12nnC1j72tQ1ZITyifS0d15IxckrcmZgZW5WbhDkPxNmZi+bxpPviYA/1DhdoKsIzl6Ox5/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrateur\\Desktop\\UCA2\\P3UCA\\Projet XAML\\Code\\trunc\\src\\ApplicationManga\\ApplicationManga\\ApplicationManga.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

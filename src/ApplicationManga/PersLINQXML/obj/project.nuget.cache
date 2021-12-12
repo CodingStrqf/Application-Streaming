@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "AjxTolO4xNfiw1RcMtHHGelDobn87Xj5bWDHocKVuwhjoAdnlMVA5UIEt84cAiSxuCUU68EuI3oL5p2uL7EGHw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrateur\\Desktop\\UCA2\\P3UCA\\Projet XAML\\Code\\trunc\\src\\ApplicationManga\\PersLINQXML\\PersLINQXML.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

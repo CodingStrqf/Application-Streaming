@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>../SORTIE_BIN</OutputPath>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
+    <Page Remove="Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="coeur.png" />
+    <None Remove="Image\coeur.png" />
+    <None Remove="Image\like.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Modele\Modele.csproj" />
+    <ProjectReference Include="..\PersLINQXML\PersLINQXML.csproj" />
+    <ProjectReference Include="..\Stub\Stub.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="coeur.png" />
+    <Resource Include="Image\coeur.png" />
+    <Resource Include="Image\like.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Video.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Video.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\bin\Debug\netcoreapp3.0\PersLINQXML.deps.json
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\bin\Debug\netcoreapp3.0\PersLINQXML.dll
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\bin\Debug\netcoreapp3.0\PersLINQXML.pdb
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\bin\Debug\netcoreapp3.0\Modele.dll
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\bin\Debug\netcoreapp3.0\Modele.pdb
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\obj\Debug\netcoreapp3.0\PersLINQXML.csprojAssemblyReference.cache
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\obj\Debug\netcoreapp3.0\PersLINQXML.AssemblyInfoInputs.cache
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\obj\Debug\netcoreapp3.0\PersLINQXML.AssemblyInfo.cs
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\obj\Debug\netcoreapp3.0\PersLINQXML.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\obj\Debug\netcoreapp3.0\PersLINQXML.csproj.CopyComplete
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\obj\Debug\netcoreapp3.0\PersLINQXML.dll
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\PersLINQXML\obj\Debug\netcoreapp3.0\PersLINQXML.pdb

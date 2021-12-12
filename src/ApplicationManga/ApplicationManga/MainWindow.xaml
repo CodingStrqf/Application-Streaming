@@ -1,0 +1,164 @@
+﻿<Window x:Class="ApplicationManga.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApplicationManga"
+        mc:Ignorable="d"
+        Title="Manga" Height="450" Width="800" Foreground="White" Background="#002D33" 
+        xmlns:conv="clr-namespace:ApplicationManga.Converter"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        WindowStartupLocation="CenterScreen"
+        >
+        
+    <Window.Resources>
+        <ObjectDataProvider x:Key="dataFromEnum"  ObjectType="{x:Type System:Enum}"> <!--MethodName="GetValues"-->
+            <!--<ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="Categories"/>
+            </ObjectDataProvider.MethodParameters>-->
+        </ObjectDataProvider>
+        <Style TargetType="Button" BasedOn="{StaticResource defaultButton}"/>
+        <Style TargetType="Border" BasedOn="{StaticResource defaultBorder}"/>
+        <conv:Converter_Image x:Key="converter_Image"/>
+    </Window.Resources>
+    
+    <Grid>
+
+        <ContentControl x:Name="VideoEnPleinEcran" Visibility="Collapsed" Panel.ZIndex="100" MaxHeight="800" >
+            <local:VideoEnPleinEcran/>
+        </ContentControl>
+
+        <DockPanel x:Name="CORP" Background="#002D33" >
+            <!-- menu -->
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Content="Favoris" Grid.Column="0" Click="Button_Click_1"/>
+
+                <TextBox x:Name="Rech" Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" Mouse.PreviewMouseDown="Rech_Click" Style="{StaticResource defaultTextBox}" TextAlignment="Left" Grid.Column="1"/>
+
+                <ComboBox ItemsSource="{Binding Source={StaticResource dataFromEnum}}" Grid.Column="2" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged" Name="mComboBox3"/>
+
+            </Grid>
+
+            <!-- menu FIN -->
+
+            <ScrollViewer>
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="6*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="6*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- en tete -->
+                    <Border BorderThickness="0" Background="Black" Grid.Row="0" >
+                        <TextBlock Text="Mangas en cours " FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <Border Background="Black" BorderThickness="0" Grid.Row="2">
+                        <TextBlock Text="Manga" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <!-- FIN en tete -->
+
+                    <!-- en cours -->
+
+                    <DockPanel Grid.Row="1">
+
+                        <ListBox Background="#002D33" x:Name="ListeEnCoursXAML" Mouse.MouseUp="ListeEnCoursXAML_MouseUp"  BorderThickness="0" ItemsSource="{Binding ListeDeManga.ListEncour}" SelectedItem="{Binding MangaSelectionneeEncour}">
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="ListBoxItem">
+                                    <Setter Property="Margin" Value="10"/>
+                                    <Setter Property="Height" Value="158"/>
+                                    <Setter Property="Width" Value="190"/>
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Background="Black">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="4*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <Image Source="{Binding Image, Converter={StaticResource converter_Image}}" Grid.Row="0"/>
+                                        <TextBlock Text="{Binding ProchainEpisode.Nom}" MaxHeight="50" FontSize="14" Foreground="#00E0FF" HorizontalAlignment="Center" Grid.Row="1"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel Orientation="Horizontal" />
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                        </ListBox>
+
+
+                        <!--   <StackPanel VerticalAlignment="center" Orientation="Horizontal" Margin="40" HorizontalAlignment="Left">
+                    <StackPanel.Resources>
+                        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource defaultButton}">
+                            <Setter Property="Margin" Value="10"/>
+                            <Setter Property="Height" Value="108"/>
+                            <Setter Property="Width" Value="190"/>
+                        </Style>
+                    </StackPanel.Resources>-->
+
+                    </DockPanel>
+                    <!-- FIN en cours -->
+
+                    <!-- Manga -->
+                    <DockPanel Grid.Row="3">
+
+                        <ContentControl x:Name="FicheManga" Margin="10 30" MaxHeight="1000" DockPanel.Dock="Top" Visibility="Collapsed">
+                            <local:UserControl1/>
+                        </ContentControl>
+
+                        <ListBox Background="#002D33" BorderThickness="0" HorizontalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding ListeDeManga.ListAff}" SelectedItem="{Binding MangaSelectionnee}" SelectionChanged="ListBox_SelectionChanged">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Orientation="Horizontal" />
+
+                                </ItemsPanelTemplate>
+
+                            </ListBox.ItemsPanel>
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="ListBoxItem">
+                                    <Setter Property="Margin" Value="10"/>
+                                    <Setter Property="Height" Value="158"/>
+                                    <Setter Property="Width" Value="190"/>
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+
+                                    <Grid Background="Black">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="4*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <Image Source="{Binding Image, Converter={StaticResource converter_Image}}" Grid.Row="0"/>
+                                        <TextBlock Text="{Binding Nom}" MaxHeight="50" FontSize="14" Foreground="#00E0FF" HorizontalAlignment="Center" Grid.Row="1"/>
+                                    </Grid>
+
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+
+
+                    </DockPanel>
+
+                    <!-- FIN Manga -->
+                </Grid>
+            </ScrollViewer>
+        </DockPanel>
+        
+    </Grid>
+    
+</Window>

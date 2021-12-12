@@ -1,0 +1,9 @@
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\Modele\bin\Debug\netcoreapp3.0\Modele.deps.json
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\Modele\bin\Debug\netcoreapp3.0\Modele.dll
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\Modele\bin\Debug\netcoreapp3.0\Modele.pdb
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\Modele\obj\Debug\netcoreapp3.0\Modele.AssemblyInfoInputs.cache
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\Modele\obj\Debug\netcoreapp3.0\Modele.AssemblyInfo.cs
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\Modele\obj\Debug\netcoreapp3.0\Modele.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\Modele\obj\Debug\netcoreapp3.0\Modele.dll
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\Modele\obj\Debug\netcoreapp3.0\Modele.pdb
+C:\Users\Administrateur\Desktop\UCA2\P3UCA\Projet XAML\Code\trunc\src\ApplicationManga\Modele\obj\Debug\netcoreapp3.0\Modele.csprojAssemblyReference.cache

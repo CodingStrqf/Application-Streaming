@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "ApplicationManga/1.0.0": {
+        "dependencies": {
+          "Modele": "1.0.0",
+          "PersLINQXML": "1.0.0",
+          "Stub": "1.0.0"
+        },
+        "runtime": {
+          "ApplicationManga.dll": {}
+        }
+      },
+      "Modele/1.0.0": {
+        "runtime": {
+          "Modele.dll": {}
+        }
+      },
+      "PersLINQXML/1.0.0": {
+        "dependencies": {
+          "Modele": "1.0.0"
+        },
+        "runtime": {
+          "PersLINQXML.dll": {}
+        }
+      },
+      "Stub/1.0.0": {
+        "dependencies": {
+          "Modele": "1.0.0"
+        },
+        "runtime": {
+          "Stub.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ApplicationManga/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Modele/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersLINQXML/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stub/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

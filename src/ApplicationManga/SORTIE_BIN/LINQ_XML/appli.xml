@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <manga>
+    <manga nom="Death Note" description="Phycopate" categorie="Psychologie" bandeannonce="http://fr.vid.web.acsta.net/nmedia/33/17/06/29/16/19572646_hd_013.mp4" image="DN.png">
+      <commentaire>
+        <com auteur="Jean" commentaire="pas trop mal je trouve" />
+        <com auteur="Alex" commentaire="Pas a mon gout" />
+      </commentaire>
+      <note>
+        <notation note="2" />
+        <notation note="1" />
+      </note>
+      <episodes>
+        <episode nomep="Episode 1" lien="https://animedigitalnetwork.fr/video/death-note/7886-episode-1-renaissance" />
+        <episode nomep="Episode 2" lien="https://animedigitalnetwork.fr/video/death-note/7888-episode-2-confrontation" />
+        <episode nomep="Episode 3" lien="https://animedigitalnetwork.fr/video/death-note/7889-episode-3-pacte" />
+      </episodes>
+    </manga>
+    <manga nom="Demon Slayer" description="Chasseur de demon" categorie="Shonen" bandeannonce="http://fr.vid.web.acsta.net/nmedia/33/21/05/05/14/19592107_hd_013.mp4" image="DS.jpg">
+      <commentaire>
+        <com auteur="Lola" commentaire="pas trop mal je trouve" />
+        <com auteur="Pierre" commentaire="Pas a mon gout" />
+      </commentaire>
+      <note>
+        <notation note="13" />
+      </note>
+      <episodes>
+        <episode nomep="Episode 1" lien="https://voiranime.com/anime/kimetsu-no-yaiba-vf/kimetsu-no-yaiba-demon-slayer-01-vf/" />
+        <episode nomep="Episode 2" lien="https://voiranime.com/anime/kimetsu-no-yaiba-vf/kimetsu-no-yaiba-demon-slayer-02-vf/" />
+        <episode nomep="Episode 3" lien="https://voiranime.com/anime/kimetsu-no-yaiba-vf/kimetsu-no-yaiba-demon-slayer-03-vf/" />
+      </episodes>
+    </manga>
+    <manga nom="Haikyuu " description="Volley" categorie="Sport" bandeannonce="http://fr.vid.web.acsta.net/nmedia/33/20/05/12/10//19588632_hd_013.mp4" image="H.jpg">
+      <commentaire>
+        <com auteur="Justine" commentaire="pas trop mal je trouve" />
+        <com auteur="Pierre" commentaire="Pas a mon gout" />
+      </commentaire>
+      <note>
+        <notation note="59" />
+      </note>
+      <episodes>
+        <episode nomep="Episode 1" lien="https://voiranime.com/anime/haikyuu/haikyuu-saison-1-01-vostfr/" />
+        <episode nomep="Episode 2" lien="https://voiranime.com/anime/haikyuu/haikyuu-saison-1-02-vostfr/" />
+        <episode nomep="Episode 3" lien="https://voiranime.com/anime/haikyuu/haikyuu-saison-1-03-vostfr/" />
+      </episodes>
+    </manga>
+    <manga nom="My Hero Academia" description="Académie de jeunes héro" categorie="Action" bandeannonce="https://fr.vid.web.acsta.net/nmedia/33/21/02/24/14/19591453_sd_013.mp4" image="MHA.png">
+      <commentaire>
+        <com auteur="Victor" commentaire="pas trop mal je trouve" />
+        <com auteur="Paul" commentaire="Pas a mon gout" />
+      </commentaire>
+      <note>
+        <notation note="10" />
+      </note>
+      <episodes>
+        <episode nomep="Episode 1" lien="https://animedigitalnetwork.fr/video/my-hero-academia/7214-episode-1-izuku-midoriya-les-origines" />
+        <episode nomep="Episode 2" lien="https://animedigitalnetwork.fr/video/my-hero-academia/7293-episode-2-les-conditions-au-metier-de-heros" />
+        <episode nomep="Episode 3" lien="https://animedigitalnetwork.fr/video/my-hero-academia/7294-episode-3-le-grondement-des-muscles" />
+      </episodes>
+    </manga>
+    <manga nom="Shingeki No kyojin" description="aventure extraordinaire, de l'humanité contre ses prédateurs" categorie="Shonen" bandeannonce="http://fr.vid.web.acsta.net/nmedia/33/14/08/22/17/19547570_hd_013.mp4" image="SNK.png">
+      <commentaire>
+        <com auteur="Jean" commentaire="pas trop mal je trouve" />
+        <com auteur="Pierre" commentaire="Pas a mon gout" />
+      </commentaire>
+      <note>
+        <notation note="85" />
+      </note>
+      <episodes>
+        <episode nomep="Episode 1" lien="https://animedigitalnetwork.fr/video/attaque-des-titans-shingeki-no-kyojin/13073-episode-1-1" />
+        <episode nomep="Episode 2" lien="https://animedigitalnetwork.fr/video/attaque-des-titans-shingeki-no-kyojin/13074-episode-2-2" />
+        <episode nomep="Episode 3" lien="https://animedigitalnetwork.fr/video/attaque-des-titans-shingeki-no-kyojin/13075-episode-3-3" />
+      </episodes>
+    </manga>
+    <manga nom="Tokyo Ghoul" description="Ghouls" categorie="Horreur" bandeannonce="http://fr.vid.web.acsta.net/nmedia/33/20/10/27/16//19590402_hd_013.mp4" image="TKG.png">
+      <commentaire>
+        <com auteur="Theo" commentaire="pas trop mal je trouve" />
+        <com auteur="Justin" commentaire="Pas a mon gout" />
+      </commentaire>
+      <note>
+        <notation note="50" />
+      </note>
+      <episodes>
+        <episode nomep="Episode 1" lien="https://animedigitalnetwork.fr/video/tokyo-ghoul-saison-1/12917-episode-1-1" />
+        <episode nomep="Episode 2" lien="https://animedigitalnetwork.fr/video/tokyo-ghoul-saison-1/12918-episode-2-2" />
+        <episode nomep="Episode 3" lien="https://animedigitalnetwork.fr/video/tokyo-ghoul-saison-1/12919-episode-3-3" />
+      </episodes>
+    </manga>
+  </manga>
+  <fav>
+    <fav nom="Death Note" description="Phycopate" categorie="Psychologie" bandeannonce="http://fr.vid.web.acsta.net/nmedia/33/17/06/29/16/19572646_hd_013.mp4" image="DN.png">
+      <commentaire>
+        <com auteur="Jean" commentaire="pas trop mal je trouve" />
+        <com auteur="Alex" commentaire="Pas a mon gout" />
+      </commentaire>
+      <note>
+        <notation note="2" />
+        <notation note="1" />
+      </note>
+      <episodes>
+        <episode NomEp="Episode 1" Lien="https://animedigitalnetwork.fr/video/death-note/7886-episode-1-renaissance" />
+        <episode NomEp="Episode 2" Lien="https://animedigitalnetwork.fr/video/death-note/7888-episode-2-confrontation" />
+        <episode NomEp="Episode 3" Lien="https://animedigitalnetwork.fr/video/death-note/7889-episode-3-pacte" />
+      </episodes>
+    </fav>
+    <fav nom="My Hero Academia" description="Académie de jeunes héro" categorie="Action" bandeannonce="https://fr.vid.web.acsta.net/nmedia/33/21/02/24/14/19591453_sd_013.mp4" image="MHA.png">
+      <commentaire>
+        <com auteur="Victor" commentaire="pas trop mal je trouve" />
+        <com auteur="Paul" commentaire="Pas a mon gout" />
+      </commentaire>
+      <note>
+        <notation note="10" />
+      </note>
+      <episodes>
+        <episode NomEp="Episode 1" Lien="https://animedigitalnetwork.fr/video/my-hero-academia/7214-episode-1-izuku-midoriya-les-origines" />
+        <episode NomEp="Episode 2" Lien="https://animedigitalnetwork.fr/video/my-hero-academia/7293-episode-2-les-conditions-au-metier-de-heros" />
+        <episode NomEp="Episode 3" Lien="https://animedigitalnetwork.fr/video/my-hero-academia/7294-episode-3-le-grondement-des-muscles" />
+      </episodes>
+    </fav>
+    <fav nom="Shingeki No kyojin" description="aventure extraordinaire, de l'humanité contre ses prédateurs" categorie="Shonen" bandeannonce="http://fr.vid.web.acsta.net/nmedia/33/14/08/22/17/19547570_hd_013.mp4" image="SNK.png">
+      <commentaire>
+        <com auteur="Jean" commentaire="pas trop mal je trouve" />
+        <com auteur="Pierre" commentaire="Pas a mon gout" />
+      </commentaire>
+      <note>
+        <notation note="85" />
+      </note>
+      <episodes>
+        <episode NomEp="Episode 1" Lien="https://animedigitalnetwork.fr/video/attaque-des-titans-shingeki-no-kyojin/13073-episode-1-1" />
+        <episode NomEp="Episode 2" Lien="https://animedigitalnetwork.fr/video/attaque-des-titans-shingeki-no-kyojin/13074-episode-2-2" />
+        <episode NomEp="Episode 3" Lien="https://animedigitalnetwork.fr/video/attaque-des-titans-shingeki-no-kyojin/13075-episode-3-3" />
+      </episodes>
+    </fav>
+  </fav>
+  <cours />
+</data>

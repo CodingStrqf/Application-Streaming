@@ -1,0 +1,148 @@
+﻿<UserControl x:Class="ApplicationManga.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ApplicationManga"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             xmlns:conv="clr-namespace:ApplicationManga.Converter" >
+    <UserControl.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource defaultButton}">
+            <Style.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Border" BasedOn="{StaticResource defaultBorder}"/>
+        <conv:Converter_Image x:Key="converter_Image"/>
+    </UserControl.Resources>
+ 
+    <Border BorderThickness="3">
+    <Grid>
+        <!-- Fiche en générale -->
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <!-- Partie Gauche de la fiche-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Click="Video" Mouse.MouseEnter="Button_MouseEnter_Video" Mouse.MouseLeave="Button_MouseLeave_Video">
+                    <DockPanel>
+                        <Image Source="{Binding MangaSelectionnee.Image, Converter={StaticResource converter_Image}}" x:Name="imagePresentation"/>
+                        <MediaElement x:Name="mediaVideo" Source="{Binding MangaSelectionnee.BandeAnnonce}" LoadedBehavior="Stop" Visibility="Collapsed"/>
+                    </DockPanel>
+                </Button>
+
+                <Border MaxWidth="350" MaxHeight="30" Grid.Row="1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Text="Ajouter au favoris" Foreground="#00E0FF" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0"/>
+
+                    <Button Grid.Column="1" BorderThickness="0" Click="ButtonFav" x:Name="FavCoeur" MaxWidth="35">
+                        <Image Source="Image/coeur.png"/>
+                    </Button>
+
+                        <StackPanel Orientation="Horizontal" Grid.Column="3">
+                            <TextBlock Text="Likes" Foreground="#00E0FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            <TextBlock Text="{}" />
+                        </StackPanel>
+                        
+                    <Button Grid.Column="4" BorderThickness="0" Click="ButtonLike" x:Name="Like" MaxWidth="35">
+                            <Image Source="Image/like.png"/>
+                        </Button>
+                    
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="2" Margin="5">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Description" Foreground="#00E0FF" HorizontalAlignment="Center" Grid.Row="0"/>
+                        <TextBlock Text="{Binding MangaSelectionnee.Description}" Foreground="#00E0FF" Grid.Row="1"/>
+                </Grid>
+                </Border>
+            <!--<WrapPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <WrapPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Height" Value="40"/>
+                        <Setter Property="Width" Value="40"/>
+                    </Style>
+                </WrapPanel.Resources>
+                <Button Content="X"/>
+                <Button Content="X"/>
+                <Button Content="X"/>
+                <Button Content="X"/>
+                <Button Content="X"/>
+            </WrapPanel>-->
+
+            <!-- FIN Partie Gauche de la fiche-->
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <!-- Partie Droite la fiche-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" MaxHeight="400"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0">
+                    <DockPanel>
+                        <TextBlock Text="Episodes" Foreground="#00E0FF" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
+
+                        <ListBox Background="#002D33"  BorderThickness="0" HorizontalAlignment="Center" ItemsSource="{Binding MangaSelectionnee.Ep}" SelectedItem="{Binding EpSelectionnee}" SelectionChanged="BoutonEp">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nom}" HorizontalAlignment="Center" TextAlignment="Center" MinWidth="200" Foreground="#00E0FF"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        
+                    </DockPanel>
+            </Border>
+            
+            <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Grid.Row="1">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Height" Value="30"/>
+                        <Setter Property="Width" Value="500"/>
+                    </Style>
+                </StackPanel.Resources>
+                    <TextBlock Text="Commentaires" Foreground="#00E0FF" HorizontalAlignment="Center"/>
+                    <TextBox Width="150" Text="Auteur" Margin="20,5" MouseEnter="Auteur_MouseEnter" MouseLeave="Auteur_MouseLeave" Name="Auteur" Foreground="DarkGray"/>
+                    <TextBox Width="150" Margin="20,5" Text="Commentaire" MouseEnter="Commentaire_MouseEnter" MouseLeave="Commentaire_MouseLeave" Name="Commentaire" Foreground="DarkGray"/>
+                    <Button Click="Button_Click" Content="AJOUTER UN COMMENTAIRE" Width="200" Margin="10"/>
+                    <ListView ItemsSource="{Binding MangaSelectionnee.Commentaires}"/>
+
+            </StackPanel>
+            
+                <!-- FIN Partie Droite de la fiche-->
+        </Grid>
+        
+        <!-- FIN Fiche en générale -->
+    </Grid>
+    </Border>
+</UserControl>
